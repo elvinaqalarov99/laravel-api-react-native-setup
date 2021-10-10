@@ -21,7 +21,7 @@
     <li>Paste your current IP in .env file as I mentioned above.</li>
     <li>Run php artisan migrate</li>
     <li>Run php artisan serve --host {YOUR_IP} --port="8000", to serve it in different host and port</li>
-    <li>Go to your database and add some categories. For now I did not handled adding categories from admin panel, it was not a part of my goal I thought. Structure should be like: name => Technologies, icon => microchip, icon_type => FontAwesome5, for example</li>
+    <li>Go to {YOUR_IP:8000}/register to register an admin user then add some categories to fetch them from backend</li>
 </ul>
 <p>Note: For now as per categories, I used expo's fontawesome5 icons. Hence please search only for those ones to get the point, then change in code the layout you want</p>
 
