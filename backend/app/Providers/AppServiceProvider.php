@@ -2,6 +2,9 @@
 
 namespace App\Providers;
 
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Pagination\Paginator;
+use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -23,6 +26,12 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        Blade::componentNamespace('App\\View\\Components\\Bread\\Input', 'input');
+
+        RedirectResponse::macro('withNotify', function ($type, $message = null, $custom = false){
+            return $this->with(notify()->$type($custom, $message));
+        });
+
+        Paginator::useBootstrap();
     }
 }

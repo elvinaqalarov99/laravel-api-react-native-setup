@@ -43,7 +43,6 @@ export default function LoginScreen({
       setLoading(true);
       setError("");
       const result = await customAxios.post("/login", credentials);
-      console.log(result.data);
       if (result.data.success) {
         await SecureStore.setItemAsync("user-token", result.data.data.token);
         dispatch(

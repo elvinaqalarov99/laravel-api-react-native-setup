@@ -6,3 +6,14 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+// Main theme
+@import "resources/sass/main";
+
+// Sidebar
+@import "resources/sass/sidebar";
+
+// jquery-confirm
+@import "~jquery-confirm/dist/jquery-confirm.min.css";
+
+@import "hamburger/hamburgers";

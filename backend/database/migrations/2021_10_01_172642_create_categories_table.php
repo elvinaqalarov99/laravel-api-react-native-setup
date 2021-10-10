@@ -13,6 +13,7 @@ class CreateCategoriesTable extends Migration
             $table->string('name');
             $table->string('icon');
             $table->string('icon_type');
+            $table->boolean('active')->default(false);
             $table->timestamps();
         });
     }
