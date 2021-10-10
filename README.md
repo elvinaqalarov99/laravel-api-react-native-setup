@@ -16,6 +16,7 @@
 <ul>
     <li>Run composer install</li>
     <li>Run npm install</li>
+    <li>Run npm run dev, to generate public app.css and app.js files, or npm run watch to watch for changes done in app.scss or app.js in resources folder.</li>
     <li>Run php artisan key:generate, to generate your own laravel app key.</li>
     <li>Run cp .env.example .env, to have your environment variables.</li>
     <li>Paste your current IP in .env file as I mentioned above.</li>
@@ -26,3 +27,5 @@
 <p>Note: For now as per categories, I used expo's fontawesome5 icons. Hence please search only for those ones to get the point, then change in code the layout you want</p>
 
 <h4>Now you can open your emulator or scan QR Code to open the app</h4>
+
+<h4>Note: Please, if I forgot something, contact me for the support :)</h4>
