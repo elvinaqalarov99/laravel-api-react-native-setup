@@ -20,6 +20,7 @@
     <li>Run php artisan key:generate, to generate your own laravel app key.</li>
     <li>Run cp .env.example .env, to have your environment variables.</li>
     <li>Paste your current IP in .env file as I mentioned above.</li>
+    <li>Create database named app in your MYSQL database</li>
     <li>Run php artisan migrate</li>
     <li>Run php artisan serve --host {YOUR_IP} --port="8000", to serve it in different host and port</li>
     <li>Go to {YOUR_IP:8000}/register to register an admin user then add some categories to fetch them from backend</li>
